@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bevan&family=Ceviche+One&family=Exo&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style3.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0e95d75add.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Shybold Home</title>
+</head>
+
+<body>
+
+    <nav id="nav-bar" class="navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 ps-2" href="index.html"><span class="logo1">shy</span><span class="logo2">BOLD</span></a>
+            <ul class="nav justify-content-end d-none d-md-flex list-inline list-unstyled text-center">
+                <li class="list-inline-item me-2">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="list-inline-item me-2">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="list-inline-item me-2">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="list-inline-item me-2">
+                    <a class="nav-link"
+                        href="https://res.cloudinary.com/shybold/image/upload/v1678706158/Samuel_Chidiebube_Ukachukwu_CV_x7dbqi.pdf"
+                        target="_blank">Resume</a>
+                </li>
+            </ul>
+            <svg>
+                <defs>
+                    <filter id="gooeyness">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+                            result="gooeyness" />
+                        <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+                    </filter>
+                </defs>
+            </svg>
+            <span class="plate plate1 d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                onclick="this.classList.toggle('active')">
+                <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                    <path class="line line1" d="M 30,65 H 70" />
+                    <path class="line line2"
+                        d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695" />
+                    <path class="line line3"
+                        d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695" />
+                </svg>
+                <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                    <path class="line" d="M 34,32 L 66,68" />
+                    <path class="line" d="M 66,32 L 34,68" />
+                </svg>
+            </span>
+            <!-- offcanvas body starts here -->
+            <div class="offcanvas offcanvas-bottom" data-bs-backdrop="static" tabindex="-1" id="offcanvasBottom">
+                <div class="offcanvas-body d-flex justify-content-center align-items-center">
+                    <ul class="list-unstyled text-center">
+                        <li class="nav-item mb-5 fs-3">
+                            <a class="nav-link" aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item mb-5 fs-3">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item mb-5 fs-3">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- offcanvas ends here -->
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1 sidebar d-none d-md-block">
+                <ul class="list-unstyled social-menu sidebar-menu p-0">
+                    <li class="mb-2"><a class="fs-4" href="https://twitter.com/shybold" target="_blank" rel="noopener"
+                            aria-label="visit my twitter page (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="mb-2"><a class="fs-4" href="https://www.linkedin.com/in/samuel-ukachukwu-85190723a/"
+                            target="_blank" rel="noopener"
+                            aria-label="visit my linkedin profile page (opens in a new tab)"><i
+                                class="fab fa-linkedin"></i></a></li>
+                    <li class="mb-2"><a class="fs-4" href="https://github.com/SamuelUkachukwu" target="_blank"
+                            rel="noopener" aria-label="visit my github profile page (opens in a new tab)"><i
+                                class="fab fa-github"></i></a></li>
+                    <li class="mb-2"><a class="fs-4" href="mailto:shybold.inc@gmail.com" target="_blank" rel="noopener"
+                            aria-label="send a mail to samuel ukachukwu (opens in a new tab)"><i
+                                class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-11 offset-md-1 p-0">
+                <!-- <div class="row"> -->
+                    <!-- <div class="project-box"> -->
+                        <div class="image-box top-1 col-12 col-md-5">
+                            <p>we are 1</p>
+                        </div>
+                        <div class="image-box top-2 col-12 col-md-5">
+                            <p>we are 2</p>
+                        </div>
+                        <div class="image-box top-3 col-12 col-md-5">
+                            <p>we are 3</p>
+                        </div>
+                        <div class="image-box top-4 col-12 col-md-5">
+                            <p>we are 4</p>
+                        </div>
+                        <div class="image-box top-5 col-12 col-md-5">
+                            <p>we are 5</p>
+                        </div>
+                        <div class="button">
+                            <button class="dir-btn" id="backBtn"><i class="fas fa-arrow-circle-up"></i></button>
+                            <button class="dir-btn" id="forwardBtn"><i class="fas fa-arrow-circle-down"></i></button>
+                        </div>
+                        <div class="text-box bottom-1 col-12 col-md-6">
+                            <p>we are 1</p>
+                        </div>
+                        <div class="text-box bottom-2 col-12 col-md-6">
+                            <p>we are 2</p>
+                        </div>
+                        <div class="text-box bottom-3 col-12 col-md-6">
+                            <p>we are 3</p>
+                        </div>
+                        <div class="text-box bottom-4 col-12 col-md-6">
+                            <p>we are 4</p>
+                        </div>
+                        <div class="text-box bottom-5 col-12 col-md-6">
+                            <p>we are 5</p>
+                        </div>
+                    <!-- </div> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid fixed-bottom footer-container">
+        <footer class="container-fluid ">
+            <div class="row">
+                <div class="col-12 text-center d-md-none pt-3">
+                    <ul class="list-unstyled social-menu d-flex justify-content-center mb-0">
+                        <li class="list-inline-item fs-4 pe-2"><a href="https://twitter.com/{{about.twitter}}"
+                                target="_blank" rel="noopener"
+                                aria-label="visit my twitter page (opens in a new tab)"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item fs-4 pe-2"><a href="https://www.linkedin.com/in/{{about.linkedin}}/"
+                                target="_blank" rel="noopener"
+                                aria-label="visit my linkedin profile page (opens in a new tab)"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li class="list-inline-item fs-4 pe-2"><a href="https://github.com/{{about.github}}"
+                                target="_blank" rel="noopener"
+                                aria-label="visit my github profile page (opens in a new tab)"><i
+                                    class="fab fa-github"></i></a>
+                        </li>
+                        <li class="list-inline-item fs-4 pe-2"><a href="mailto:{{about.email}}" target="_blank"
+                                rel="noopener" aria-label="send a mail to samuel ukachukwu (opens in a new tab)"><i
+                                    class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center text-white">
+                    <p class="my-2">copyright &#169; <span class="logo1">shy</span><span class="logo2">BOLD</span> &reg;
+                        <span id="copy-right"></span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const imageBoxes = document.querySelectorAll('.image-box');
+        const textBoxes = document.querySelectorAll('.text-box');
+        const backBtn = document.querySelector('#backBtn');
+        const forwardBtn = document.querySelector('#forwardBtn');
+        let currentIndex = 0;
+
+        function updateIcons() {
+            if (window.matchMedia("(max-width: 767px)").matches) {
+                // Screen size is 767px or less, update icons
+                backBtn.innerHTML = '<i class="fas fa-arrow-circle-left"></i>';
+                forwardBtn.innerHTML = '<i class="fas fa-arrow-circle-right"></i>';
+            } else {
+                // Screen size is greater than 767px, revert to original icons
+                backBtn.innerHTML = '<i class="fas fa-arrow-circle-up"></i>';
+                forwardBtn.innerHTML = '<i class="fas fa-arrow-circle-down"></i>';
+            }
+        }
+
+        function showDivs() {
+            for (let i = 0; i < imageBoxes.length; i++) {
+                if (i === currentIndex) {
+                    imageBoxes[i].style.display = 'block';
+                    textBoxes[i].style.display = 'block';
+                } else {
+                    imageBoxes[i].style.display = 'none';
+                    textBoxes[i].style.display = 'none';
+                }
+            }
+        }
+
+        function showNext() {
+            currentIndex++;
+            if (currentIndex >= imageBoxes.length) {
+                currentIndex = 0;
+            }
+            showDivs();
+        }
+
+        function showPrev() {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = imageBoxes.length - 1;
+            }
+            showDivs();
+        }
+        updateIcons();
+        showDivs();
+
+        window.addEventListener("resize", updateIcons);
+        backBtn.addEventListener('click', showPrev);
+        forwardBtn.addEventListener('click', showNext);
+    </script>
+    <script>
+        document.getElementById("copy-right").innerHTML = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
