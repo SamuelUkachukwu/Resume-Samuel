@@ -12,12 +12,15 @@
     --bright-red: #FF9593;
     --black: #01090D;
     --white: #e6f1ff;
-    --green: #04CC1B;
 }
 
 body {
     background-color: var(--dark-red);
     color: var(--white);
+}
+
+.roboto-txt {
+    font-family: 'Roboto', sans-serif;
 }
 
 /*----------------------------web-kit scroll bar styling */
@@ -57,17 +60,16 @@ body {
     position: fixed;
     height: 100vh;
     border-right: 3px solid var(--black);
-    /* background-color: var(--dark-red); */
 }
 
 .sidebar-menu {
     text-align: center;
-    margin-top: 70vh;
+    margin-top: 64vh;
 }
 
 .social-menu li a,
 .navbar-brand,
-.project-links {
+.project-links, .dir-btn {
     color: var(--white);
     transition: 700ms;
 }
@@ -75,7 +77,7 @@ body {
 .social-menu li a:hover,
 .navbar-brand:hover,
 .nav-link:hover,
-.project-links:hover {
+.project-links:hover, .dir-btn:hover{
     color: var(--black);
 }
 
@@ -128,7 +130,7 @@ svg {
     stroke-width: 5.5px;
 }
 
-/* index styling */
+/* ----------------------------------index styling */
 .hero-box {
     position: relative;
     background-color: var(--dark-red);
@@ -157,7 +159,6 @@ svg {
 
 .advt_1 {
     width: 40%;
-    /* background-color: #000; */
 }
 
 .advt_2 {
@@ -168,7 +169,7 @@ svg {
     background-color: var(--red);
 }
 
-/* First plate */
+/* ---------------------------First plate */
 .plate1 .line2 {
     stroke-dasharray: 40 200;
     stroke-dashoffset: 0px;
@@ -203,7 +204,7 @@ svg {
     transition: transform 400ms 350ms;
 }
 
-/* project styling */
+/* -----------------------------------project styling */
 .project-box {
     overflow-x: hidden;
     width: 100%;
@@ -213,43 +214,53 @@ svg {
 .button {
     padding: 6px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    top: 85%;
+    left: 91%;
+    z-index: 6;
 }
 
 .dir-btn {
     background: transparent;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .image-box,
 .text-box {
     display: none;
-    /* width: 50%; */
-    height: 100%;
     position: absolute;
 }
 
 .text-box {
-    right: 0;
+    right: 2%;
+    width: 80%;
+    /* height: 40%; */
+    bottom: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(9, 49%, 55%, 0.7);
+    padding: 20px;
+    backdrop-filter: blur(15px)saturate(190%);
 }
 
-.top-1,
-.top-2,
-.top-3,
-.top-4,
-.top-5 {
+.project-description {
+    text-align: justify;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: var(--red);
+}
+
+.image-box {
+    width: 85%;
+    height: 76%;
+    bottom: 12%;
+    margin-left: 1%;
+    background-color: var(--red);
     animation: slideBottom 1s ease-in-out forwards;
 }
 
-.bottom-1,
-.bottom-2,
-.bottom-3,
-.bottom-4,
-.bottom-5 {
+.text-box {
     animation: slideTop 1s ease-in-out forwards;
 }
 
@@ -273,47 +284,16 @@ svg {
     }
 }
 
-.top-1 {
-    background-color: #724444;
+.project-img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.top-2 {
-    background-color: #65a52a;
-}
-
-.top-3 {
-    background-color: #3d2aa5;
-}
-
-.top-4 {
-    background-color: #c4356c;
-}
-
-.top-5 {
-    background-color: #a52a2a;
-}
-
-.bottom-1 {
-    background-color: #eee01d;
-}
-
-.bottom-2 {
-    background-color: #c4356c;
-}
-
-.bottom-3 {
-    background-color: #a52a6e;
-}
-
-.bottom-4 {
-    background-color: #65a52a;
-}
-
-.bottom-5 {
-    background-color: #724444;
-}
-
-/* about page styling */
+/* -------------------------about page styling */
 .header-spacer {
     height: 75px;
 }
@@ -324,20 +304,21 @@ svg {
 }
 
 .about-txt {
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
 .about-box {
     height: 60vh;
+    margin: auto;
 }
 
 .skills-box {
-    height: 10vh;
+    /* height: 10vh; */
 }
 
 .skill-slider {
     width: 90%;
-    height: 250px;
+    /* height: 250px; */
     margin: auto;
     overflow: hidden;
 }
@@ -350,7 +331,7 @@ svg {
 
 .skill {
     width: 200px;
-    height: 200px;
+    /* height: 200px; */
     display: flex;
     align-items: center;
     padding: 15px;
@@ -388,7 +369,7 @@ svg {
     }
 }
 
-/* -------------contact me styling */
+/* -------------------contact me styling */
 .connect {
     height: 100vh
 }
@@ -407,7 +388,7 @@ svg {
     color: var(--light-red);
 }
 
-/* button styling  */
+/* --------------------------button styling  */
 .fancy-btn {
     font-weight: bold;
     font-family: 'Roboto Condensed', sans-serif;
@@ -420,7 +401,7 @@ svg {
     user-select: none;
     background-color: var(--white) !important;
     border: 1px solid var(--white);
-    padding: .398rem .75rem .355rem;
+    padding: 6px 8px;
     font-size: 1.2rem;
     line-height: 1.5;
     border-radius: 0;
@@ -436,22 +417,24 @@ svg {
     background-color: var(--light-red) !important;
     border: 1px solid var(--light-red);
 }
-/*-------------- 404 error styling */
+
+/*-------------------------- 404 error styling */
 .error-text {
     z-index: 100;
     font-weight: bold;
-  }
-  
-  .error-page {
+}
+
+.error-page {
     position: relative;
     height: 100vh;
-  }
-  
-  .error-text-header {
+}
+
+.error-text-header {
     font-size: 4rem;
     font-family: 'Bevan', cursive;
     letter-spacing: 2px;
-  }
+}
+
 /* https://css-tricks.com/snippets/css/transparent-background-images/ */
 .error-page::after {
     content: "";
@@ -466,15 +449,15 @@ svg {
     right: 0;
     position: absolute;
     z-index: 1;
-  }
+}
 
-/* -----------------footer styling */
+/* ----------------------------footer styling */
 .footer-container {
     border-top: 3px solid var(--black);
     background-color: var(--dark-red);
 }
 
-/* media styling for screen size mobile  */
+/* -----------------media styling for screen size mobile  */
 @media (max-width: 991px) {
     .hero-text-box {
         bottom: 35%;
@@ -495,32 +478,33 @@ svg {
         bottom: 0;
     }
 
+    .project-img {
+        top: 42%;
+    }
+
     .button {
         display: flex;
         flex-direction: column;
+        top: 29%;
+        left: 84%;
+        bottom: 47%;
+        right: 8%;
     }
 
-    .image-box,
-    .text-box {
-        display: none;
+    .image-box {
         width: 100%;
         height: 50%;
-        position: absolute;
-    }
-
-    .top-1,
-    .top-2,
-    .top-3,
-    .top-4,
-    .top-5 {
+        top: 5%;
+        margin: 0;
         animation: slideFromRight 1s ease-in-out forwards;
     }
 
-    .bottom-1,
-    .bottom-2,
-    .bottom-3,
-    .bottom-4,
-    .bottom-5 {
+    .text-box {
+        width: 90%;
+        /* height: 60%; */
+        top: 28%;
+        left: 5.5%;
+        transform: translate(-50%, -50%);
         animation: slideFromLeft 1s ease-in-out forwards;
     }
 
