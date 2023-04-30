@@ -71,7 +71,7 @@ body {
 .navbar-brand,
 .project-links, .dir-btn {
     color: var(--white);
-    transition: 700ms;
+    transition: 0.4s;
 }
 
 .social-menu li a:hover,
