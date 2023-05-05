@@ -69,7 +69,9 @@ body {
 
 .social-menu li a,
 .navbar-brand,
-.project-links, .dir-btn {
+.project-links,
+.dir-btn,
+.policy {
     color: var(--white);
     transition: 0.4s;
 }
@@ -77,7 +79,9 @@ body {
 .social-menu li a:hover,
 .navbar-brand:hover,
 .nav-link:hover,
-.project-links:hover, .dir-btn:hover{
+.project-links:hover,
+.dir-btn:hover,
+.policy:hover {
     color: var(--black);
 }
 
